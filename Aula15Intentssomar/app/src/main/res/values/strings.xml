@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aula 15 - Intents (somar)</string>
+    <string name="first">Primeiro Numeral</string>
+    <string name="second">Segundo Numeral</string>
+    <string name="clear">LIMPAR TELA</string>
+    <string name="add">+</string>
+    <string name="resul">Resultado: </string>
+</resources>
