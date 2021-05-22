@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculadora Max</string>
+    <string name="first">Primeiro Numeral</string>
+    <string name="second">Segundo Numeral</string>
+    <string name="clear">LIMPAR TELA</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="div">/</string>
+    <string name="mult">*</string>
+    <string name="resul">Resultado</string>
+</resources>

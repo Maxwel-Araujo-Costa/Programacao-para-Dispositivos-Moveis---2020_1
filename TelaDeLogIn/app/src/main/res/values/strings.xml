@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Atividade de Login</string>
+    <string name="trocaTela">Troca de Tela Efetuada!</string>
+    <string name="novaTela">Nova Tela</string>
+    <string name="entrar">Entrar</string>
+    <string name="nome">Nome: </string>
+    <string name="usuario">Usuário: </string>
+    <string name="senha">Senha: </string>
+    <string name="sair">Sair</string>
+</resources>
