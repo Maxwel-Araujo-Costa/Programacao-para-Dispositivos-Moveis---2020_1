@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cardapio">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCardapio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cardapio"
+        android:textColor="#121111"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarCardapio"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarCardapio"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/menuLinesCardapio"
+        app:layout_constraintTop_toTopOf="@+id/toolbarCardapio" />
+
+    <ImageView
+        android:id="@+id/menuLinesCardapio"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarCardapio"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarCardapio"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="@+id/toolbarCardapio"
+        app:layout_constraintTop_toTopOf="@+id/toolbarCardapio"
+        app:srcCompat="@drawable/menu_lines_icon" />
+
+    <ImageView
+        android:id="@+id/menuSetaCardapio"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarCardapio"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarCardapio"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toEndOf="@+id/ViewLabel"
+        app:layout_constraintTop_toTopOf="@+id/toolbarCardapio"
+        app:layout_constraintVertical_bias="0.63"
+        app:srcCompat="@drawable/drop_down_arrow" />
+
+    <ImageView
+        android:id="@+id/tresPontosCardapio"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarCardapio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/menuSetaCardapio"
+        app:layout_constraintTop_toTopOf="@+id/toolbarCardapio"
+        app:srcCompat="@drawable/three_dots_vertical_icon" />
+
+    <Button
+        android:id="@+id/btnCancelarCardapio"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="#03DAC5"
+        android:text="@string/cancelar"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarCardapio"
+        app:layout_constraintEnd_toStartOf="@+id/tresPontosCardapio"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toEndOf="@+id/menuSetaCardapio"
+        app:layout_constraintTop_toTopOf="@+id/toolbarCardapio" />
+
+    <ImageButton
+        android:id="@+id/btnCarrinho"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarCardapio"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarCardapio"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelarCardapio"
+        app:layout_constraintTop_toTopOf="@+id/toolbarCardapio"
+        app:srcCompat="@drawable/carrinho_transparente" />
+
+    <Button
+        android:id="@+id/btnContadorCarrinho"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        android:text="@string/zero"
+        android:textColor="#0B0000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarCardapio"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarCardapio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCarrinho"
+        app:layout_constraintTop_toTopOf="@+id/toolbarCardapio" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+            android:id="@+id/lvCardapio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </ListView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
