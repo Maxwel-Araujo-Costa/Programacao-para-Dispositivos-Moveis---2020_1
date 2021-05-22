@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Nome: "
+        android:id="@+id/tvNome" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNome"
+        android:layout_toRightOf="@id/tvNome"
+        android:layout_marginBottom="10dp" />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNome"
+        android:text="RG: "
+        android:id="@+id/tvRG" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignTop="@id/tvRG"
+        android:layout_toRightOf="@id/tvRG"
+        android:id="@+id/edtRG" />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtRG"
+        android:text="CPF: "
+        android:id="@+id/tvCPF" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignTop="@id/tvCPF"
+        android:layout_toRightOf="@id/tvCPF"
+        android:id="@+id/edtCPF" />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtCPF"
+        android:text="Usuário: "
+        android:id="@+id/tvUsuario" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignTop="@id/tvUsuario"
+        android:layout_toRightOf="@id/tvUsuario"
+        android:id="@+id/edtUsuario" />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUsuario"
+        android:text="Senha: "
+        android:id="@+id/tvSenha" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignTop="@id/tvSenha"
+        android:layout_toRightOf="@id/tvSenha"
+        android:id="@+id/edtSenha" />
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSenha"
+        android:layout_marginLeft="-251dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/edtSenha"
+        android:text="Enviar" />
+
+</RelativeLayout>
